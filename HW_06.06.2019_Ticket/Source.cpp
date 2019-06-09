@@ -28,7 +28,7 @@ int main() {
 	cout << "Enter feature to sort by: flight, departure, passenger" << endl;
 	cin >> feature;
 	ts.sort(SortBy2(feature)); //in the LIST SortBy is the inner method
-	for_each(ts.begin(), ts.end(), [](ticket t) {cout << t << endl << endl; });
+	for_each(ts.begin(), ts.end(), [](ticket t) {cout << t << endl; });
 
 	ticket t;
 	cout << "Enter the needed date" << endl;
@@ -47,7 +47,7 @@ int main() {
 		return (t2 == a);
 	}
 	), ts.end());
-	for_each(ts.begin(), ts.end(), [](ticket t) {cout << t << endl << endl; });
+	for_each(ts.begin(), ts.end(), [](ticket t) {cout << t << endl; });
 
 	system("pause");
 	return 0;
